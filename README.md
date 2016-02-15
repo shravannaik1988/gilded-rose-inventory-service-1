@@ -14,22 +14,20 @@
 * http://localhost:8080/inventory/items
 * method:GET
 
-####Sample response
+#####Sample response
 ```bash
 [
   {
     "id": "2",
-    "name": "",
-    "description": "",
-    "value": "",
-    "quantity": 1
+    "name": "Item1",
+    "value": 30,
+    "quantity": 5
   },
   {
     "id": "3",
-    "name": "4",
-    "description": "",
-    "value": "",
-    "quantity": 1
+    "name": "Item2",
+    "value": 20,
+    "quantity": 10
   }
 ]
 ```
