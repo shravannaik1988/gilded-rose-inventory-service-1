@@ -78,7 +78,12 @@
   "secret": "shhhhhhhh"
 }
 ```
-* To generate a JWT, run this file gilded-rose-inventory-service/app/tools/jwtGenerator.js to generate a JWT, or use this token
+* To generate a JWT, run this file
+```bash 
+> cd gilded-rose-inventory-service
+> ./app/tools/jwtGenerator.js 
+```
+to generate a JWT, or use this token
 ```bash
 eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiY2FsbGVyMyJ9.DaofgPhwOY0L7zaJ9MJKPdtQ_E1O0Mf3rnjBNez4wnQ
 ```
