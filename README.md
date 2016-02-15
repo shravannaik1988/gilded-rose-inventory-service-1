@@ -9,10 +9,15 @@
 
 > The Gilded Rose service is to help clients to get all the available items in the store and puchase sertain items frmom the store
 
-### getItems
+### getItems 
 
-* http://localhost:8080/inventory/items
-* method:GET
+* URL
+  * http://localhost:8080/inventory/items
+* Method
+  * GET
+* Headers
+  * Authorization = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiY2FsbGVyMiJ9.gnYRSY_57tjFwQ_a-Vt_ge-HUmYTwGwXCinuSjYDd6I
+  * Content-Type = application/json
 
 #####Sample response
 ```bash
@@ -34,8 +39,13 @@
 
 ### puchaseItem
 
-* http://localhost:8080/inventory/items/purchase
-* method:POST
+* URL
+  * http://localhost:8080/inventory/items/purchase
+* Method
+  * POST
+* Headers
+  * Authorization = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiY2FsbGVyMiJ9.gnYRSY_57tjFwQ_a-Vt_ge-HUmYTwGwXCinuSjYDd6I
+  * Content-Type = application/json
 
 #####Sample request
 ```bash
