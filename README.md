@@ -68,10 +68,25 @@
   ]
 }
 ```
-## Runing this service locally
+
+## Authentication
+* A simple JSON Web Token (JWT) is used to authenticate the callers.
+* There is a file under gilded-rose-inventory-service/app/lib/security/serviceCallers.json, this file has list of expected callers and the secret which is used to decode JWT.
+```bash
+{
+  "serviceComsumers": ["caller1", "caller2"],
+  "secret": "shhhhhhhh"
+}
+```
+* To generate a JWT, run this file gilded-rose-inventory-service/app/tools/jwtGenerator.js to generate a JWT, or use this token
+```bash
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiY2FsbGVyMyJ9.DaofgPhwOY0L7zaJ9MJKPdtQ_E1O0Mf3rnjBNez4wnQ
+```
+
+## Running this service locally
 ```bash
 > git clone https://github.com/shravansabavat/gilded-rose-inventory-service.git
-> cd gilded-rose-inventory-service/app
+> cd gilded-rose-inventory-service/app/lib
 > npm install
 > node webApp.js
 ```
