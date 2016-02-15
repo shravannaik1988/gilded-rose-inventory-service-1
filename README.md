@@ -98,7 +98,7 @@ var secret = 'shhhhhhhh';
 // encode
 var token = jwt.encode(payload, secret);
 
-console.log(token); //=> { name: 'caller1' }
+console.log(token); //=> eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiY2FsbGVyMSJ9.u-E3EfMEePAI-4PmzRB5_gioTG8BcCv5Ad3aJColLzs
 
 // decode
 var decoded = jwt.decode(token, secret);
