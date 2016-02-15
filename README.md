@@ -105,6 +105,11 @@ This would start the serive on port 8080
 > mocha app/test/ --recursive
 ```
 
+##Run unit tests coverage
+```bash
+> cd gilded-rose-inventory-service/app
+> grunt coverage
+```
+
 ####Unit test coverage
 ![Alt text](test_coverage.png?raw=true "Test Coverage")
-
