@@ -115,6 +115,6 @@ This would start the serive on port 8080
 > cd gilded-rose-inventory-service/app
 > grunt coverage
 ```
-
 ####Unit test coverage
+* Open file locate at gilded-rose-inventory-service/app/coverage/index.html in chrome
 ![Alt text](test_coverage.png?raw=true "Test Coverage")
