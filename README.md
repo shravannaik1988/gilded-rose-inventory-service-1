@@ -47,7 +47,7 @@
   * Authorization = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiY2FsbGVyMiJ9.gnYRSY_57tjFwQ_a-Vt_ge-HUmYTwGwXCinuSjYDd6I
   * Content-Type = application/json
 
-#####Sample request
+#####Sample request body
 ```bash
 [
   {
