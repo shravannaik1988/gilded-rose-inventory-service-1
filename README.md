@@ -1,6 +1,6 @@
 # gilded-rose-inventory-service
 
-> A service to get and purchase items.
+> A service to get and purchase items in gilded rose store.
 
 
 ## Getting Started
