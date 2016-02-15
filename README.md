@@ -1,6 +1,7 @@
 # gilded-rose-inventory-service
 
-> A service to get and purchase items in gilded rose store.
+> A service to get and purchase items in gilded rose store. The service is implemented using a micro service architecture and uses
+JSON Web Token authentication scheme to authenticate callers.
 
 
 ## Getting Started
@@ -88,6 +89,22 @@
   "secret": "shhhhhhhh"
 }
 ```
+* A client calling this service should generate a JWT
+```javascript
+var jwt = require('jwt-simple');
+var payload = { name: 'caller1' };
+var secret = 'shhhhhhhh';
+
+// encode
+var token = jwt.encode(payload, secret);
+
+console.log(token); //=> { name: 'caller1' }
+
+// decode
+var decoded = jwt.decode(token, secret);
+console.log(decoded); //=> { name: 'caller1' }
+```
+
 * To generate a JWT, run this file
 ```bash 
 > cd gilded-rose-inventory-service
