@@ -31,3 +31,40 @@
   }
 ]
 ```
+
+### puchaseItem
+
+* http://localhost:8080/inventory/items/purchase
+* method:POST
+
+#####Sample request
+```bash
+[
+  {
+    "id": "123",
+    "name": "Item1",
+    "value": 30,
+    "quantity": 5
+  },
+  {
+    "id": "2434",
+    "name": "Item2",
+    "value": 20,
+    "quantity": 10
+  }
+]
+```
+#####Sample response
+```bash
+{
+  "PurchaseId": 5,
+  "Status": "PROCESSING",
+  "DatePurchased": "2016-02-14T20:56:26.677Z",
+  "Name": "Some Name",
+  "Price": 123,
+  "ProductIds": [
+    "2",
+    "3"
+  ]
+}
+```
