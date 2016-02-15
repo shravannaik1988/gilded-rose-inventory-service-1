@@ -11,11 +11,11 @@
 
 ### getItems Service
 
-```http://localhost:8080/inventory/items```
-```method:GET```
+*http://localhost:8080/inventory/items
+*method:GET
 
 ####Sample response
-```
+
 [
   {
     "id": "2",
@@ -60,4 +60,3 @@
     "quantity": 1
   }
 ]
-```
