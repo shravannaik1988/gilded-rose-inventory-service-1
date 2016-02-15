@@ -60,11 +60,11 @@
   "PurchaseId": 5,
   "Status": "PROCESSING",
   "DatePurchased": "2016-02-14T20:56:26.677Z",
-  "Name": "Some Name",
+  "Name": "Customer Name",
   "Price": 123,
   "ProductIds": [
-    "2",
-    "3"
+    "123",
+    "2434"
   ]
 }
 ```
