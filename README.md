@@ -99,6 +99,8 @@ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiY2FsbGVyMyJ9.DaofgPhwOY0L7zaJ9M
 ```
 
 ## Running this service locally
+* Install node.js if not already installed form here https://nodejs.org/en/download/
+
 ```bash
 > git clone https://github.com/shravansabavat/gilded-rose-inventory-service.git
 > cd gilded-rose-inventory-service/app/lib
