@@ -1,6 +1,6 @@
 var jwt = require('jwt-simple');
 
-var payload = { name: 'caller3' };
+var payload = { name: 'caller2' };
 var secret = 'shhhhhhhh';
 
 // encode

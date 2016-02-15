@@ -18,7 +18,9 @@ describe('purchaseItem endpoint', function () {
             ];
 
             var options = {
-                headers: {}
+                headers: {
+                    authorization: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiY2FsbGVyMiJ9.gnYRSY_57tjFwQ_a-Vt_ge-HUmYTwGwXCinuSjYDd6I'
+                }
             };
 
             return restClient
@@ -46,7 +48,9 @@ describe('purchaseItem endpoint', function () {
             ];
 
             var options = {
-                headers: {}
+                headers: {
+                    authorization: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiY2FsbGVyMiJ9.gnYRSY_57tjFwQ_a-Vt_ge-HUmYTwGwXCinuSjYDd6I'
+                }
             };
 
             return restClient
@@ -65,14 +69,16 @@ describe('purchaseItem endpoint', function () {
             var data;
 
             var options = {
-                headers: {}
+                headers: {
+                    authorization: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYW1lIjoiY2FsbGVyMiJ9.gnYRSY_57tjFwQ_a-Vt_ge-HUmYTwGwXCinuSjYDd6I'
+                }
             };
 
             return restClient
                 .postJson(purchaseItemEndpoint, data, options)
                 .on('complete', function (data, response) {
                     assert(response.statusCode === 400);
-                    assert(data === 'invalid/missing item');
+                    assert(data.userMessage === 'invalid/missing item');
                     done();
                 });
         });
