@@ -86,5 +86,6 @@ This would start the serive on port 8080
 
 ##Run unit tests
 
-
+####Unit test coverage
+![Alt text](test_coverage.png?raw=true "Test Coverage")
 
