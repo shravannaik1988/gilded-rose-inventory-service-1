@@ -106,6 +106,13 @@ function arePurchaseItemsAvailabile(listOfPurchaseItems) {
 
 }
 
+/**
+ * Return items which are not available to buy.
+ *
+ * @param listOfPurchaseItems
+ * @param nonAvaiableIds
+ * @returns {Array}
+ */
 function getUnavailableErrorResponse(listOfPurchaseItems, nonAvaiableIds) {
     var items = [];
     listOfPurchaseItems.forEach(function (item) {
