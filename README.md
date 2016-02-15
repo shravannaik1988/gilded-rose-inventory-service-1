@@ -68,3 +68,23 @@
   ]
 }
 ```
+## Runing this service locally
+```bash
+> git clone https://github.com/shravansabavat/gilded-rose-inventory-service.git
+> cd gilded-rose-inventory-service/app
+> npm install
+> node webApp.js
+```
+This would start the serive on port 8080
+
+## Run Automation Tests
+```bash
+> cd gilded-rose-inventory-service/automation
+> npm install
+> ./run.sh
+```
+
+##Run unit tests
+
+
+
